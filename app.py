@@ -9,14 +9,14 @@ from cryptography.fernet import Fernet
 hosting = "http://localhost:5000"
 
 firebaseConfig = {
-  "apiKey": "AIzaSyDfNxPHQGIRtxDhHYkuo-CJufhrtWWk2aM",
-  "authDomain": "to-do-80e38.firebaseapp.com",
-  "projectId": "to-do-80e38",
-  "storageBucket": "to-do-80e38.appspot.com",
-  "messagingSenderId": "1002597984018",
-  "appId": "1:1002597984018:web:2507bef9113a5cf10135cb",
-  "measurementId": "G-7588TXLL0W",
-  "databaseURL":"https://to-do-80e38-default-rtdb.firebaseio.com/",
+  "apiKey": "*",
+  "authDomain": "*",
+  "projectId": "*",
+  "storageBucket": "*",
+  "messagingSenderId": "*",
+  "appId": "*",
+  "measurementId": "*",
+  "databaseURL":"*",
 
 }
 firebase = pyrebase.initialize_app(firebaseConfig)
