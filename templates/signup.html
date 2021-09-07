@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up to to-do list</title>
+    <link rel="stylesheet" href="/static/main.css">
+
+</head>
+<body>
+    <nav id="nabvbar">
+        <a href="" style="text-decoration: none;color:white">To-do list sign up </a>
+    </nav>
+    <div class="container"> <br>
+        <br>
+        <center>
+        <div class="card" > 
+            <h5>Sign up </h5>
+            <form action="" method="POST">
+                <input name="email" type="email" placeholder="E-mail..." class="input" ><br><br>
+                
+                <input name="password" type="password" placeholder="Password..." class="input" >
+                <br>
+                <br>
+                <button type="submit" class="btn_dark">Submit</button>
+            </form>
+            {% if error == True %}
+                <p style="color:red;font-family:serif">There was an error occurred while signing up!</p>
+                
+            {% endif %}
+                
+        </div>
+        </center>
+    </div>
+    
+</body>
+</html>

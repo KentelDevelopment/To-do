@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> To-do list</title>
+    <link rel="stylesheet" href="/static/main.css">
+
+</head>
+<body>
+    <nav id="nabvbar">
+        <a href="" style="text-decoration: none;color:white">To-do list  </a>
+    </nav>
+
+    <p style="font-family:Arial;font-size:13px;">{{email}}</p>
+
+    <div class="container"> <br>
+        <br>
+
+        <ul>
+            {% if todos %}
+            {% for t in todos %}
+                <li> {{todos[t]["todo"]}} <button style="border:0px;color:red;mergin-left:10px" onclick="window.location.assign('/delete?email={{emailENC}}&password={{password}}&id={{t}}')">Delete</button></li>
+            {% endfor %}
+            {% endif %}
+        </ul>
+
+
+            <form action="" method="POST">
+                <input placeholder="Type in to-do" name="todo" class="input"><button style="font-size: 20px;">Add</button>
+            </form>
+
+
+    </div>
+    
+</body>
+</html>

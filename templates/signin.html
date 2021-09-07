@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in to to-do list</title>
+    <link rel="stylesheet" href="/static/main.css">
+
+</head>
+<body>
+    <nav id="nabvbar">
+        <a href="" style="text-decoration: none;color:white">To-do list sign in </a>
+    </nav>
+    <div class="container"> <br>
+        <br>
+        <center>
+        <div class="card" > 
+            <h5>Sign in </h5>
+            <form action="" method="POST">
+                <input type="email" class="input" name="email" placeholder="E-mail..." value="{{email}}"><br>
+                <br>
+                <input type="password" class="input" name="password" placeholder="Password..." ><br>
+                <button class="btn_dark">Sign in</button>
+            </form>
+            {% if newAcc == True %}
+                <div class="happyAlert" onclick="this.style.display='none'" style="display: ;">
+                    {{msg}}
+                </div>
+            {% endif %}
+            {% if error ==True %}
+                <p style="color:red">Error!</p>
+            {% endif %}
+            
+        </div>
+        </center>
+    </div>
+    
+</body>
+</html>
